@@ -1,0 +1,377 @@
+body{
+    margin: 0px;
+    min-height: 1000px;
+}
+
+
+/*this is the general division of all division*/
+#generaldiv{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 2px solid;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+/*this is my navigation bar*/
+#navbarwithprofilepicture{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 150px 400px 250px;
+    color: rgba(221, 212, 212, 0.733);
+    background-color: black;
+}
+#myprofilepicturefornav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#myprofilepicturefornav2{
+    border-radius: 20px;
+    width: 75%;
+    height: 75%;
+}
+#introduction{
+    text-align: center;
+    line-height: 1;
+    margin: 4px;
+}
+#introduction p{
+    margin-top: -5px;
+    line-height: 1;
+    font-size: 20px;
+}
+#mynamefornav1{
+    margin-top: -20px;
+}
+#mynavlis{
+    line-height: 2.9em;
+    margin-top: -20px;
+    margin-left: -25px;
+}
+#ullist{
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+#randomfooter{
+    margin-right: 5px;
+    position: relative;
+    text-align: end;
+}
+#randomfooter1{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+/*MY MAIN CONTENT*/
+#maincontenthome{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 1fr;
+
+}
+#home1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    background-color: black;
+    
+}
+
+#homeprofile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/4 / 6/6;
+    z-index: 1;
+    margin: 15px;
+}
+#homeprofilepics{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 95%;
+    width: 80%;
+}
+#homeprofile2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    grid-area: 1/1 / 6/4;
+    z-index: 1;
+    background-color: black;
+    
+}
+#homeprofile2intro{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: rgba(221, 212, 212, 0.733);
+    line-height: 1.2em;
+}
+#homeprofile2intro::first-letter{
+    font-size: 2em;
+    font-style: inherit;
+}
+
+#home2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 310px;
+    gap: 50px;
+    background-color: rgb(3, 3, 49);
+
+}
+.mehome{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 75px 75px 75px 75px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: black;
+}
+.mehomelayout{
+    display: flex;
+    grid-area: 1/1 / 4/5;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.picpic{
+    border-radius: 150px;
+    width: 100%;
+    height: 100%;
+}
+.mehomelayout2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    grid-area: 4/1 / 5/5;
+    background-color: black;
+    color: rgba(221, 212, 212, 0.733);
+}
+.mehomelayout2 p{
+    font-size: 30px;
+}
+
+/*-----------------------------------end of homepage in myweb--------------------------------------------*/
+/*-----------------------------------start of aboutme in myweb--------------------------------------------*/
+
+#aboutmemain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 15px;
+}
+#introductionaboutme{
+    display: grid;
+    width: auto;
+    height: 170px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    
+}
+#introductionaboutme p{
+    font-size: 75px;
+    line-height: .3em;
+    color: rgba(221, 212, 212, 0.733);
+     
+}
+#introductionaboutme p::first-letter{
+    font-weight: bold;
+    font-size: 130px;
+    font-style: italic;
+    gap: 10px;
+}
+
+#introductionaboutme2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    color: rgba(221, 212, 212, 0.733);
+    font-size: 19px;
+    background-color: rgb(2, 2, 22)
+    
+}
+.info1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1/4 / 3/5;
+    background-color: rgb(3, 3, 49);
+    padding: 10px;
+    
+}
+.info2{
+    display: grid;
+    grid-area: 1/1 / 3/4;
+    background-color: rgb(3, 3, 49);
+    padding: 50px;
+}
+.info3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1/1 / 3/2;
+    background-color: rgb(3, 3, 49);
+    padding: 10px;
+}
+.info4{
+    display: grid;
+    grid-area: 1/2 / 3/5;
+    background-color: rgb(2, 2, 22);
+    padding: 50px;
+}
+.info5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1/4 / 3/5;
+  
+    margin-left: -90px;
+    z-index: 1;
+}
+.info6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1/4 / 3/5;
+
+    margin-left: 90px;
+    z-index: 2;
+}
+.foraboutme1{
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+    
+}
+.foraboutme2{
+    width: 250px;
+    height: 250px;
+    z-index: 5;
+    margin-left: -10px;
+}
+
+
+
+/*-----------------------------------end of aboutme in myweb--------------------------------------------*/
+/*-----------------------------------start of myproj & myarts in myweb--------------------------------------------*/
+
+#aboutmemain2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 15px;
+}
+.introductionproject{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    gap: 10px;
+}
+#formyproj1{
+    display: grid;
+    grid-area: 1/1 / 3/3;
+    background-color: rgb(2, 2, 22);
+}
+#formyproj2{
+    display: grid;
+    grid-area: 1/3 / 3/5;
+    background-color: rgb(2, 2, 22);
+}
+.formyprojinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 75px 75px;
+    border: 5px solid rgba(250, 250, 250, 0.226);
+    position: relative;
+}
+.formyprojinfo p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.formyprojinfotitle{
+    display: grid;
+    grid-area: 1/1 / 2/3;
+
+    color: rgba(221, 212, 212, 0.733);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.formyprojinfopic{
+    display: flex;
+    grid-area: 2/1 / 5/3;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+#formyprojinfopicformyprojinfopic{
+    width: 100%;
+    height: 100%;
+}
+.formyprojinfodiscription{
+    display: grid;
+    grid-area: 1/3 / 4/5;
+    color: rgba(221, 212, 212, 0.733);
+    font-size: 18px;
+    text-align: left;
+    padding-top: 70px;
+    
+}
+.formyprojinfotooluses{
+    display: grid;
+    grid-area: 4/3 / 5/5;
+    color: rgba(221, 212, 212, 0.733);
+    font-size: 14px;
+    position: absolute;
+    font-style: italic;
+    bottom: 0;
+    right: 5px;
+}
+
+/*-----------------------------------end of myproj & myarts in myweb--------------------------------------------*/
+/*-----------------------------------start of contact info in myweb--------------------------------------------*/
+#mywholecontactinfo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0px;
+    gap: 15px;
+    background-color: rgb(2, 2, 22);
+}
+#mycontactinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contactul{
+    color: rgba(221, 212, 212, 0.733);
+    line-height: 1em;
+    font-size: 20px;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------end of contact info in myweb--------------------------------------------*/
